@@ -17,7 +17,7 @@ def parser(result):
 
 def saveFile(data):
     print("Saving to data.txt ...")
-    with open("data.txt","w") as f:
+    with open("data.txt","w",encoding='utf-8') as f:
         for line in data:
             f.write((line.text)+'\n')
     print("Data saved.")
